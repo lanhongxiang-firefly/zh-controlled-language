@@ -227,9 +227,9 @@ python tests/blind-review/generate_materials.py
 | 范围 | 文件或内容 | 许可 |
 | --- | --- | --- |
 | 规范文本、术语表、模板、文档、测试用例与数据 | `*.md`、`*.json`、`*.yaml`、`*.txt` 及非脚本配置文件与生成报告 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-| 明确列入 MIT Scope 的脚本 | `install_skills.py`、`tests/run_tests.py`、`tests/verify_migration.py`、`experiment/evaluate.py` | [MIT](LICENSE) |
+| 本仓库原创的 Python 源代码文件（共 6 个） | `install_skills.py`、`tests/run_tests.py`、`tests/verify_migration.py`、`experiment/evaluate.py`、`tests/blind-review/generate_materials.py`、`tests/blind-review/summarize.py` | [MIT](LICENSE) |
 
-**待维护者确认的许可证边界：** 仓库还包含 `tests/blind-review/generate_materials.py` 和 `tests/blind-review/summarize.py`。`LICENSE-DOCS` 将 `*.py` 排除在 CC BY 4.0 范围之外并指向 `LICENSE`，但 `LICENSE` 的 MIT Scope 只明确列出上述四个脚本。现有文件对这两个盲评脚本的许可归属表述不一致；本 README 不扩大或重新解释许可证范围。维护者应确认后同步两份许可证文件。
+第三方材料及贡献者无权再授权的内容不因其存放于本仓库而自动适用上述许可；应遵循其原有权利状态。具体范围以 [LICENSE](LICENSE) 和 [LICENSE-DOCS](LICENSE-DOCS) 为准。
 
 CC BY 4.0 覆盖的是项目原创文本、案例、数据的表达、整理与编排，不使事实、科学规律、方法、概念或术语本身成为项目专有内容。第三方材料及贡献者无权再授权的内容，遵循其原有权利状态。项目名称、技能名称及其标识不因上述许可获得授权。
 
