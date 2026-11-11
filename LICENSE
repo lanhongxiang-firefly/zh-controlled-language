@@ -1,13 +1,16 @@
 Scope
 
-This license applies only to the following Python scripts:
+This MIT License applies to all original Python source files in this repository:
 - install_skills.py
 - tests/run_tests.py
 - tests/verify_migration.py
 - experiment/evaluate.py
+- tests/blind-review/generate_materials.py
+- tests/blind-review/summarize.py
 
-All other repository content is licensed under CC BY 4.0
-as described in LICENSE-DOCS.
+All other original repository content within the scope described in
+LICENSE-DOCS is licensed under CC BY 4.0. Third-party materials are excluded
+and remain subject to their respective rights and licenses.
 
 MIT License
 
