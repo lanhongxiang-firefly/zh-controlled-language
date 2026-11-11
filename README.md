@@ -72,7 +72,7 @@ python tests/verify_migration.py
 | 规范文本、术语表、模板、文档、测试用例与数据 | `*.md`、`*.json`、`*.yaml`、`*.txt` 及非脚本配置 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 可执行脚本 | `*.py` | MIT |
 
-条款见 `LICENSE-DOCS`（CC BY 4.0 声明与范围）与 `LICENSE`（MIT 全文）。GitHub 当前将仓库识别为 MIT，该识别不能完整表示本项目按文件划分的双许可证安排。实际授权范围以本文件的许可证范围表及 `LICENSE`、`LICENSE-DOCS` 为准。引用或改编规范文本时按 CC BY 4.0 署名。
+条款见 `LICENSE-DOCS`（CC BY 4.0 声明与范围）与 `LICENSE`（MIT 全文及 Scope 说明）。GitHub 的仓库级许可证识别不能完整表示本项目按文件划分的双许可证安排；因 `LICENSE` 含范围说明，当前仓库被识别为 Other（NOASSERTION）。无论侧栏显示何种结果，实际授权范围以本文件的许可证范围表及 `LICENSE`、`LICENSE-DOCS` 为准。引用或改编规范文本时按 CC BY 4.0 署名。
 
 许可覆盖项目原创的规范文本、测试案例、评测数据及其表达、整理与编排。规则思想、科学规律、判定方法、概念、术语与事实本身不因本项目获得专有权利；既有标准译名、专有名称与第三方材料遵循原有权利状态。项目名称与标识不在授权范围内。贡献内容默认按上表对应的许可授权。
 
