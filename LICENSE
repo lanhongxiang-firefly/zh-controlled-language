@@ -1,3 +1,14 @@
+Scope
+
+This license applies only to the following Python scripts:
+- install_skills.py
+- tests/run_tests.py
+- tests/verify_migration.py
+- experiment/evaluate.py
+
+All other repository content is licensed under CC BY 4.0
+as described in LICENSE-DOCS.
+
 MIT License
 
 Copyright (c) 2026 lanhongxiang-firefly
