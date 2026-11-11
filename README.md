@@ -63,7 +63,20 @@ python tests/verify_migration.py
 | `docs/architecture/templates/` | 可直接复制的扩展包与文体模板 |
 | `experiment/` | V0.1 对照实验与历史记录 |
 
+## 许可证
+
+本项目按内容类型分别授权。
+
+| 范围 | 文件 | 许可 |
+| --- | --- | --- |
+| 规范文本、术语表、模板、文档、测试用例与数据 | `*.md`、`*.json`、`*.yaml`、`*.txt` 及非脚本配置 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| 可执行脚本 | `*.py` | MIT |
+
+条款见 `LICENSE-DOCS`（CC BY 4.0 声明与范围）与 `LICENSE`（MIT 全文）。GitHub 侧栏识别到的 MIT 仅覆盖脚本；引用或改编规范文本时按 CC BY 4.0 署名。
+
+许可不覆盖规则思想、术语、事实、判定方法、既有标准译名与专有名称；项目名称与标识不在授权范围内。贡献内容默认按上表对应的许可授权。
+
 ## 状态
 
 - 架构：ADR-0001 已批准并实施；V0.2 内容已迁移至分层结构。
-- 许可证：待定（F-4，Deferred），由维护者确定后补充。
+- 许可证：规范文本与数据 CC BY 4.0，脚本 MIT；F-4 的许可证选型已决定，多渠道发布仍列为 Deferred。

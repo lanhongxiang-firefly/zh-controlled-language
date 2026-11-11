@@ -1,0 +1,34 @@
+# 规范文本与数据许可 · CC BY 4.0
+
+本仓库中的规范文本、术语表、模板、文档、测试用例与数据采用
+**Creative Commons Attribution 4.0 International（CC BY 4.0）** 许可。
+
+- 人类可读摘要：https://creativecommons.org/licenses/by/4.0/
+- 法律代码全文：https://creativecommons.org/licenses/by/4.0/legalcode
+
+## 授权范围
+
+| 范围 | 文件 |
+| --- | --- |
+| 本文件覆盖 | `*.md`、`*.json`、`*.yaml`、`*.txt`，以及仓库内非脚本的配置文件与生成报告 |
+| 本文件不覆盖 | `*.py` 可执行脚本，采用 MIT 许可，见 `LICENSE` |
+
+脚本包括 `install_skills.py`、`tests/run_tests.py`、`tests/verify_migration.py`、
+`experiment/evaluate.py`。范围划分同时记录在 `README.md`「许可证」小节。
+
+## 许可条件
+
+在保留署名、附许可链接、标注修改、不附加额外限制且不暗示背书的前提下，
+允许以任何媒介与格式复制、再分发、改编与商业使用本文件覆盖的内容。
+CC 许可一经授予不可撤销。
+
+## 不在许可范围内
+
+- 规则思想、判定方法、术语、事实、数据与科学含义本身。
+- 既有标准译名、学科审定名词、专有名称、型号编号，以及引用原文。
+- 第三方材料的权利；贡献者不得将无权再授权的第三方文本按本许可授权。
+- 项目名称 `中文受控语言规范 / Chinese Controlled Language`、
+  技能名 `zh-controlled-language` 及其标识与商标性使用。
+
+仓库文件若同时含文本与可执行内容，按其主要用途归类；存在歧义时以
+`README.md`「许可证」小节的范围表为准。
