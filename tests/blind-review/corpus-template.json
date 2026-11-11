@@ -1,0 +1,11 @@
+{
+  "module": "real-corpus",
+  "note": "真实项目文本语料模板。登记后另存为同目录的 corpus.json，generate_materials.py 与 summarize.py 会自动纳入并按模块单独统计。字段与约束见 real-corpus.md。",
+  "actions": {
+    "no_change": "不作任何修改",
+    "error_fix": "判为 Error 并作最小纠正",
+    "warning_note": "给出 Warning 建议，不改写",
+    "review": "记待确认，不改写"
+  },
+  "cases": []
+}

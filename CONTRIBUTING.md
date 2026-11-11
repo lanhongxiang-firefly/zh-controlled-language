@@ -25,6 +25,8 @@ python tests/run_tests.py --integration --strict
 
 术语与规则的审核门槛、状态机、依据类别与独立发布约定见 `docs/architecture/pack-interface.md` 与 `docs/architecture/CONTRIBUTING.md`。
 
+涉及规则或术语判定的改动，构造用例与自评基线不能替代独立盲评；材料生成、评审口径与汇总方式见 `tests/blind-review/protocol.md`。真实项目文本语料按 `tests/blind-review/real-corpus.md` 登记。
+
 ## 许可证
 
 规范文本、术语表、模板，以及项目原创的测试用例与评测数据的表达、整理和编排采用 CC BY 4.0；可执行脚本采用 MIT。事实、方法、概念、术语本身与第三方材料不因本项目获得专有权利，边界见 `LICENSE-DOCS`「许可范围边界」。范围划分见 `README.md`「许可证」小节。提交贡献即表示同意按对应许可授权所提交内容。

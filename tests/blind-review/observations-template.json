@@ -1,0 +1,148 @@
+{
+  "reviewer": "",
+  "date": "",
+  "rules_version": "0.2",
+  "note": "填写 observed_action 与 observed_level；保存为 observations.json。",
+  "observations": {
+    "core:P01": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P02": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P03": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P05": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P06": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P07": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P08": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:P09": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:N01": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:N02": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:N03": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:N05": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:N06": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:N07": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:B01": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:B02": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:B03": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:B07": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "core:B08": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "engineering-thermophysics:P04": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "engineering-thermophysics:N04": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "engineering-thermophysics:N08": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "engineering-thermophysics:B04": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "engineering-thermophysics:B05": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "engineering-thermophysics:B06": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "integration:I-01": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "integration:I-02": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    "integration:I-03": {
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    }
+  }
+}

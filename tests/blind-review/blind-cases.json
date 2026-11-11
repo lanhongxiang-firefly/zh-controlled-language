@@ -1,0 +1,269 @@
+{
+  "note": "独立盲评材料。不含期望答案；判定口径见 protocol.md，动作取值见 actions。",
+  "actions": {
+    "no_change": "不作任何修改",
+    "error_fix": "判为 Error 并作最小纠正",
+    "warning_note": "给出 Warning 建议，不改写",
+    "review": "记待确认，不改写"
+  },
+  "levels": [
+    "none",
+    "Error",
+    "Warning",
+    "Suggestion"
+  ],
+  "cases": [
+    {
+      "id": "core:P01",
+      "module": "core",
+      "text_type": "技术文档",
+      "source": "在壁面温度低于给定上限且辐射传热可忽略的条件下，按稳态导热关联式计算通过多层平壁的热流密度。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P02",
+      "module": "core",
+      "text_type": "技术文档",
+      "source": "用于高温条件下壁面热流密度测量的新的标定方法的适用范围见第二节。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P03",
+      "module": "core",
+      "text_type": "技术报告",
+      "source": "温度、压力与流量以及壁面状况均需记录。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P05",
+      "module": "core",
+      "text_type": "技术文档",
+      "source": "本文对壁面温度进行了测量，并对测量结果进行了分析。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P06",
+      "module": "core",
+      "text_type": "日志与错误提示",
+      "source": "我们已记录本次测量的偏差，可在结果页查看。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P07",
+      "module": "core",
+      "text_type": "技术报告",
+      "source": "若缺少边界条件，不能不说明该解的适用范围。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P08",
+      "module": "core",
+      "text_type": "日常技术交流",
+      "source": "这组数据先按上一版的方法处理，等标定结果出来再定系数。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:P09",
+      "module": "core",
+      "text_type": "科研申请书",
+      "source": "本课题拟在高温工况下开展壁面热流密度测量方法研究，并结合已有数据说明方法的适用范围与局限。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:N01",
+      "module": "core",
+      "text_type": "技术文档",
+      "source": "温度为 300，压力 2。改写后写作：温度是 300 K，压力是 2 MPa。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:N02",
+      "module": "core",
+      "text_type": "技术文档",
+      "source": "在适当条件下可忽略辐射传热。改写后写作：可以直接忽略辐射传热。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:N03",
+      "module": "core",
+      "text_type": "项目材料",
+      "source": "结果偏差可能是设备问题导致的。改写后写作：结果偏差是设备问题导致的。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:N05",
+      "module": "core",
+      "text_type": "代码注释",
+      "source": "阀值按上一版取值。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:N06",
+      "module": "core",
+      "text_type": "技术文档",
+      "source": "把公式中的量符号 λ 统一改写为中文「导热系数」，并调整下标。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:N07",
+      "module": "core",
+      "text_type": "技术报告",
+      "source": "计算值与实验值基本吻合，说明模型可靠。改写后写作：模型完全可靠。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:B01",
+      "module": "core",
+      "text_type": "项目材料",
+      "source": "按项目约定的「闭环」检查项逐项核对。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:B02",
+      "module": "core",
+      "text_type": "技术报告",
+      "source": "在允许偏差 2% 内，计算值与实验值吻合。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:B03",
+      "module": "core",
+      "text_type": "日常技术交流",
+      "source": "该改动针对写法，不针对技术结论。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:B07",
+      "module": "core",
+      "text_type": "项目材料",
+      "source": "显著降低了操作复杂度。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "core:B08",
+      "module": "core",
+      "text_type": "日常技术交流",
+      "source": "这套参数先用老办法跑一下，下午再对齐。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "engineering-thermophysics:P04",
+      "module": "engineering-thermophysics",
+      "text_type": "技术文档",
+      "source": "热导率取材料表数值，并随温度修正。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "engineering-thermophysics:N04",
+      "module": "engineering-thermophysics",
+      "text_type": "技术报告",
+      "source": "误差与测量不确定度按同一公式计算。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "engineering-thermophysics:N08",
+      "module": "engineering-thermophysics",
+      "text_type": "技术文档",
+      "source": "单位时间内通过给定面的热量按热流量计算，本文把热量写作 5 W。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "engineering-thermophysics:B04",
+      "module": "engineering-thermophysics",
+      "text_type": "技术文档",
+      "source": "Re 增大时 Nu 随之变化。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "engineering-thermophysics:B05",
+      "module": "engineering-thermophysics",
+      "text_type": "技术文档",
+      "source": "导热系数取材料表数值，热导率随温度修正。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "engineering-thermophysics:B06",
+      "module": "engineering-thermophysics",
+      "text_type": "技术文档",
+      "source": "用于高温条件下壁面热流密度测量的新的标定方法被记录在系统所生成的文件中。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "integration:I-01",
+      "module": "integration",
+      "text_type": "技术报告",
+      "source": "本报告采用热导率一词，全文保持一致。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "integration:I-02",
+      "module": "integration",
+      "text_type": "技术文档",
+      "source": "材料科学 Pack 与工程热物理 Pack 均登记「热导率」，但定义与适用语境不同。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    },
+    {
+      "id": "integration:I-03",
+      "module": "integration",
+      "text_type": "日常技术交流",
+      "source": "示例术语按待确认处理，不改写其他学科文本。",
+      "observed_action": "",
+      "observed_level": "",
+      "note": ""
+    }
+  ]
+}

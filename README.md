@@ -45,13 +45,16 @@ python install_skills.py
 ```text
 python tests/run_tests.py --integration --strict
 python tests/verify_migration.py
+python tests/blind-review/generate_materials.py
 ```
 
 测试集分 Core、Domain Pack、集成三组，覆盖正例、反例与边界案例，并记录误判情况。`tests/stub-pack/` 用于验证新增学科不影响 Core 与 Skill。`verify_migration.py` 为本机迁移校验，运行时需要保留 `backup/` 与四宿主安装副本。
 
+现有观测记录由规则制定方填写，存在同源偏差。`tests/blind-review/` 提供剥离期望答案的 28 条盲评材料、评审表与汇总脚本，以及真实项目文本语料的登记规范；独立盲评与真实文本测试尚待外部评审方与语料，协议见 `tests/blind-review/protocol.md`。
+
 ## 贡献
 
-见 `CONTRIBUTING.md`、`docs/architecture/CONTRIBUTING.md` 与 `docs/architecture/pack-interface.md`。术语条目具有 Proposed／Accepted／Deprecated／Disputed 状态；未经可靠依据支持或领域确认的条目不得升级为强制规范。
+见 `CONTRIBUTING.md`、`docs/architecture/CONTRIBUTING.md` 与 `docs/architecture/pack-interface.md`。术语条目具有 Proposed／Accepted／Deprecated／Disputed 状态；未经可靠依据支持或领域确认的条目不得升级为强制规范。涉及规则或术语判定的改动，建议同时提供 `tests/blind-review/` 的独立评审记录。
 
 ## 文档
 
@@ -61,6 +64,9 @@ python tests/verify_migration.py
 | `docs/architecture/pack-interface.md` | Domain Pack 与 Writing Profile 接口 |
 | `docs/architecture/CONTRIBUTING.md` | 贡献流程、审核门槛与 PR 模板 |
 | `docs/architecture/templates/` | 可直接复制的扩展包与文体模板 |
+| `docs/distribution.md` | 第一版分发渠道边界与仍待评估的渠道 |
+| `docs/repository-metadata.md` | GitHub About 描述与 topics 文案、设置方式 |
+| `tests/blind-review/` | 独立盲评协议、材料、汇总脚本与真实语料登记规范 |
 | `experiment/` | V0.1 对照实验与历史记录 |
 
 ## 许可证
@@ -79,4 +85,7 @@ python tests/verify_migration.py
 ## 状态
 
 - 架构：ADR-0001 已批准并实施；V0.2 内容已迁移至分层结构。
-- 许可证：规范文本与数据 CC BY 4.0，脚本 MIT；F-4 的许可证选型已决定，多渠道发布仍列为 Deferred。
+- 许可证：规范文本与数据 CC BY 4.0，脚本 MIT；F-4 的许可证选型已决定，多渠道发布仍列为 Deferred，渠道边界见 `docs/distribution.md`。
+- 分发：Git 仓库、技能包 zip 与四宿主本机安装均含 `LICENSE` 与 `LICENSE-DOCS`；公开版不预设默认学科。
+- 验证：28 条构造用例误判 0，跨学科模拟断言 6 项通过；独立盲评与真实项目文本测试尚未执行。
+- 仓库元数据：About 描述已存在，topics 待设置，文案与命令见 `docs/repository-metadata.md`。

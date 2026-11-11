@@ -25,6 +25,8 @@ BACKUP = ROOT / "backup"
 
 # (源文件, 技能包内相对路径)
 FILE_MAP = [
+    ("LICENSE", "LICENSE"),
+    ("LICENSE-DOCS", "LICENSE-DOCS"),
     ("skill/SKILL.md", "SKILL.md"),
     ("skill/ALIASES.md", "ALIASES.md"),
     ("core/language-rules.md", "core/language-rules.md"),
