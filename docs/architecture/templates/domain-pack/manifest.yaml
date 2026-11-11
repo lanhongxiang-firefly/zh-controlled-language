@@ -1,0 +1,12 @@
+# 复制本目录到 domains/<id>/ 后替换全部 <...> 占位符。
+# 字段定义见 docs/architecture/pack-interface.md 第 2 节。
+# 第一版只使用下列 7 个字段；Deferred 字段（core_compat、default_profiles、
+# evidence_policy、status、版本范围表达式）不得出现。
+id: <pack-id>
+name: <学科中文名>
+version: 0.1.0
+core_version: "0.2"
+enabled: false
+maintainers:
+  - <责任人>
+description: <一句话说明术语范围与触发场景>

@@ -1,0 +1,10 @@
+# 首个完整验证 Domain Pack。字段定义见 docs/architecture/pack-interface.md 第 2 节。
+# core_version 0.2 表示 Core 规则内容迁移自 V0.2，规则本身未改动。
+id: engineering-thermophysics
+name: 工程热物理
+version: 1.0.0
+core_version: "0.2"
+enabled: true
+maintainers:
+  - 项目维护者
+description: 工程热物理领域术语、准则数与学科特有表达规范；本机默认学科

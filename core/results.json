@@ -1,0 +1,24 @@
+{
+  "reviewer": "规则制定方自评基线（非独立盲评）",
+  "observations": {
+    "P01": "no_change",
+    "P02": "no_change",
+    "P03": "no_change",
+    "P05": "no_change",
+    "P06": "no_change",
+    "P07": "no_change",
+    "P08": "no_change",
+    "P09": "no_change",
+    "N01": "error_fix",
+    "N02": "error_fix",
+    "N03": "error_fix",
+    "N05": "error_fix",
+    "N06": "error_fix",
+    "N07": "error_fix",
+    "B01": "review",
+    "B02": "no_change",
+    "B03": "no_change",
+    "B07": "warning_note",
+    "B08": "review"
+  }
+}

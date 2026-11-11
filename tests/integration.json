@@ -1,0 +1,56 @@
+{
+  "dimensions": [
+    "术语准确性",
+    "中文自然程度",
+    "过度修改",
+    "原意保留"
+  ],
+  "text_types": [
+    "代码注释",
+    "技术文档",
+    "科研申请书",
+    "技术报告",
+    "项目材料",
+    "日志与错误提示",
+    "日常技术交流"
+  ],
+  "actions": {
+    "no_change": "不作任何修改",
+    "error_fix": "判为 Error 并作最小纠正",
+    "warning_note": "给出 Warning 建议，不改写",
+    "review": "记待确认，不改写"
+  },
+  "module": "integration",
+  "cases": [
+    {
+      "id": "I-01",
+      "category": "positive",
+      "text_type": "技术报告",
+      "source": "本报告采用热导率一词，全文保持一致。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "过度修改",
+      "rationale": "未加载 Pack 时仅 Core 生效，不强制替换为其他词形"
+    },
+    {
+      "id": "I-02",
+      "category": "boundary",
+      "text_type": "技术文档",
+      "source": "材料科学 Pack 与工程热物理 Pack 均登记「热导率」，但定义与适用语境不同。",
+      "expected_action": "review",
+      "expected_level": "Warning",
+      "dimension": "术语准确性",
+      "rationale": "术语冲突保留各自上下文，不强制统一"
+    },
+    {
+      "id": "I-03",
+      "category": "boundary",
+      "text_type": "日常技术交流",
+      "source": "示例术语按待确认处理，不改写其他学科文本。",
+      "expected_action": "review",
+      "expected_level": "Warning",
+      "dimension": "术语准确性",
+      "rationale": "stub Pack 状态为 Proposed，不得升级为强制规则"
+    }
+  ]
+}

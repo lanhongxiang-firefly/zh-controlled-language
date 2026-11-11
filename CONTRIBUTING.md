@@ -1,0 +1,30 @@
+# 贡献指南
+
+新增学科扩展包或修改文体规范，请先阅读 `docs/architecture/pack-interface.md` 与 `docs/architecture/CONTRIBUTING.md`。贡献者只需理解这两份文件，不必熟悉 Core 的全部规则或 Skill 的实现。
+
+## 最小流程
+
+1. 复制 `docs/architecture/templates/domain-pack/` 到 `domains/<id>/`，目录名与 `manifest.yaml` 的 `id` 一致。
+2. 填写 manifest、术语条目（状态从 `Proposed` 起步）、学科规则（每条含「不构成违规的情形」）与正例／反例／边界用例。
+3. 运行 `python tests/run_tests.py domains/<id>`，确认结构校验通过并查看误判记录。
+4. 按 `docs/architecture/CONTRIBUTING.md` 第 4 节的 PR 模板提交。
+
+## 约束
+
+- 不修改 `core/` 来适配单一学科；不在 Writing Profile 中写术语、译法或学科约束。
+- 未经可靠依据支持、或状态为 `Proposed`／`Disputed` 的条目不得设为 Error 级。
+- 不虚构标准编号、文献信息或确认记录。
+- 不预设默认学科，不修改技能包目录名（更名与别名映射由维护者统一处理）。
+- 新增 Pack 不应影响其他 `domains/`、任何 `profiles/` 或 `skill/SKILL.md`。
+
+## 测试
+
+```text
+python tests/run_tests.py --integration --strict
+```
+
+术语与规则的审核门槛、状态机、依据类别与独立发布约定见 `docs/architecture/pack-interface.md` 与 `docs/architecture/CONTRIBUTING.md`。
+
+## 许可证
+
+待定（F-4，Deferred），由维护者确定后补充；在此之前请先通过 Issue 讨论再提交较大的贡献。

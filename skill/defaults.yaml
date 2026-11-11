@@ -1,0 +1,3 @@
+# 公开分发版本：不预设默认学科，由使用者首次配置时填写。
+# 本机安装由 install_skills.py 覆盖为 default_domain: engineering-thermophysics。
+default_domain: ""

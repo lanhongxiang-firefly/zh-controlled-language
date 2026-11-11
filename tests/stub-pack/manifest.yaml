@@ -1,0 +1,9 @@
+# 跨学科模拟测试用最小 Pack；不参与正式发布。
+id: stub-discipline
+name: 模拟学科
+version: 0.1.0
+core_version: "0.2"
+enabled: true
+maintainers:
+  - integration-test
+description: 用于验证新增学科不需要修改 Core 与 Skill 执行层

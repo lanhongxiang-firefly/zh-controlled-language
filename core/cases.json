@@ -1,0 +1,216 @@
+{
+  "dimensions": [
+    "术语准确性",
+    "中文自然程度",
+    "过度修改",
+    "原意保留"
+  ],
+  "text_types": [
+    "代码注释",
+    "技术文档",
+    "科研申请书",
+    "技术报告",
+    "项目材料",
+    "日志与错误提示",
+    "日常技术交流"
+  ],
+  "actions": {
+    "no_change": "不作任何修改",
+    "error_fix": "判为 Error 并作最小纠正",
+    "warning_note": "给出 Warning 建议，不改写",
+    "review": "记待确认，不改写"
+  },
+  "module": "core",
+  "cases": [
+    {
+      "id": "P01",
+      "category": "positive",
+      "text_type": "技术文档",
+      "source": "在壁面温度低于给定上限且辐射传热可忽略的条件下，按稳态导热关联式计算通过多层平壁的热流密度。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "过度修改",
+      "rationale": "长句承载完整条件，拆分会割裂限定关系"
+    },
+    {
+      "id": "P02",
+      "category": "positive",
+      "text_type": "技术文档",
+      "source": "用于高温条件下壁面热流密度测量的新的标定方法的适用范围见第二节。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "中文自然程度",
+      "rationale": "多层定语在科技文献常见且指代清楚"
+    },
+    {
+      "id": "P03",
+      "category": "positive",
+      "text_type": "技术报告",
+      "source": "温度、压力与流量以及壁面状况均需记录。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "中文自然程度",
+      "rationale": "连接词语体差别不影响语义"
+    },
+    {
+      "id": "P05",
+      "category": "positive",
+      "text_type": "技术文档",
+      "source": "本文对壁面温度进行了测量，并对测量结果进行了分析。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "中文自然程度",
+      "rationale": "学术写作常见结构，动作对象明确"
+    },
+    {
+      "id": "P06",
+      "category": "positive",
+      "text_type": "日志与错误提示",
+      "source": "我们已记录本次测量的偏差，可在结果页查看。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "过度修改",
+      "rationale": "人称由界面文体决定，属 Suggestion 级"
+    },
+    {
+      "id": "P07",
+      "category": "positive",
+      "text_type": "技术报告",
+      "source": "若缺少边界条件，不能不说明该解的适用范围。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "中文自然程度",
+      "rationale": "双重否定为合法结构，语义明确"
+    },
+    {
+      "id": "P08",
+      "category": "positive",
+      "text_type": "日常技术交流",
+      "source": "这组数据先按上一版的方法处理，等标定结果出来再定系数。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "过度修改",
+      "rationale": "日常交流仅适用 Error 级，风格项不适用"
+    },
+    {
+      "id": "P09",
+      "category": "positive",
+      "text_type": "科研申请书",
+      "source": "本课题拟在高温工况下开展壁面热流密度测量方法研究，并结合已有数据说明方法的适用范围与局限。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "中文自然程度",
+      "rationale": "申请书文体由评审要求决定，不设句段模板"
+    },
+    {
+      "id": "N01",
+      "category": "negative",
+      "text_type": "技术文档",
+      "source": "温度为 300，压力 2。改写后写作：温度是 300 K，压力是 2 MPa。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "术语准确性",
+      "rationale": "单位缺失须保留原数值并标注待核，E3"
+    },
+    {
+      "id": "N02",
+      "category": "negative",
+      "text_type": "技术文档",
+      "source": "在适当条件下可忽略辐射传热。改写后写作：可以直接忽略辐射传热。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "原意保留",
+      "rationale": "条件与适用范围属保留项，E6"
+    },
+    {
+      "id": "N03",
+      "category": "negative",
+      "text_type": "项目材料",
+      "source": "结果偏差可能是设备问题导致的。改写后写作：结果偏差是设备问题导致的。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "原意保留",
+      "rationale": "证据强度不得删除，E5"
+    },
+    {
+      "id": "N05",
+      "category": "negative",
+      "text_type": "代码注释",
+      "source": "阀值按上一版取值。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "术语准确性",
+      "rationale": "确凿错字纠正为阈值，E2"
+    },
+    {
+      "id": "N06",
+      "category": "negative",
+      "text_type": "技术文档",
+      "source": "把公式中的量符号 λ 统一改写为中文「导热系数」，并调整下标。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "原意保留",
+      "rationale": "公式与符号原样保留，E3"
+    },
+    {
+      "id": "N07",
+      "category": "negative",
+      "text_type": "技术报告",
+      "source": "计算值与实验值基本吻合，说明模型可靠。改写后写作：模型完全可靠。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "原意保留",
+      "rationale": "结论边界与限定不得扩大，E5、E6"
+    },
+    {
+      "id": "B01",
+      "category": "boundary",
+      "text_type": "项目材料",
+      "source": "按项目约定的「闭环」检查项逐项核对。",
+      "expected_action": "review",
+      "expected_level": "Warning",
+      "dimension": "过度修改",
+      "rationale": "术语已有项目定义，W2 可保留语境"
+    },
+    {
+      "id": "B02",
+      "category": "boundary",
+      "text_type": "技术报告",
+      "source": "在允许偏差 2% 内，计算值与实验值吻合。",
+      "expected_action": "no_change",
+      "expected_level": "Warning",
+      "dimension": "过度修改",
+      "rationale": "已给出判据，W4 可保留语境"
+    },
+    {
+      "id": "B03",
+      "category": "boundary",
+      "text_type": "日常技术交流",
+      "source": "该改动针对写法，不针对技术结论。",
+      "expected_action": "no_change",
+      "expected_level": "Warning",
+      "dimension": "中文自然程度",
+      "rationale": "用于澄清范围且无事实争议，W6 可保留语境"
+    },
+    {
+      "id": "B07",
+      "category": "boundary",
+      "text_type": "项目材料",
+      "source": "显著降低了操作复杂度。",
+      "expected_action": "warning_note",
+      "expected_level": "Warning",
+      "dimension": "过度修改",
+      "rationale": "定性描述且无事实争议时保留，W4"
+    },
+    {
+      "id": "B08",
+      "category": "boundary",
+      "text_type": "日常技术交流",
+      "source": "这套参数先用老办法跑一下，下午再对齐。",
+      "expected_action": "review",
+      "expected_level": "Warning",
+      "dimension": "中文自然程度",
+      "rationale": "日常交流双方已明确所指，仅提示不改写，W2"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "dimensions": ["术语准确性", "中文自然程度", "过度修改", "原意保留"],
+  "text_types": ["代码注释", "技术文档", "科研申请书", "技术报告", "项目材料", "日志与错误提示", "日常技术交流"],
+  "actions": {
+    "no_change": "不作任何修改",
+    "error_fix": "判为 Error 并作最小纠正",
+    "warning_note": "给出 Warning 建议，不改写",
+    "review": "记待确认，不改写"
+  },
+  "cases": [
+    {
+      "id": "P-01",
+      "category": "positive",
+      "text_type": "<文本类型>",
+      "source": "<正确表达原文>",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "过度修改",
+      "rationale": "<为何不应改写>",
+      "pack_id": "<pack-id>",
+      "term_id": "T-<PACK>-01"
+    },
+    {
+      "id": "N-01",
+      "category": "negative",
+      "text_type": "<文本类型>",
+      "source": "<真实错误原文>",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "术语准确性",
+      "rationale": "<规则依据>",
+      "pack_id": "<pack-id>",
+      "term_id": "T-<PACK>-01"
+    },
+    {
+      "id": "B-01",
+      "category": "boundary",
+      "text_type": "<文本类型>",
+      "source": "<语境依赖原文>",
+      "expected_action": "review",
+      "expected_level": "Warning",
+      "dimension": "中文自然程度",
+      "rationale": "<可保留的语境>",
+      "pack_id": "<pack-id>",
+      "term_id": "T-<PACK>-02"
+    }
+  ]
+}

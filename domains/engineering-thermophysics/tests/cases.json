@@ -1,0 +1,86 @@
+{
+  "dimensions": [
+    "术语准确性",
+    "中文自然程度",
+    "过度修改",
+    "原意保留"
+  ],
+  "text_types": [
+    "代码注释",
+    "技术文档",
+    "科研申请书",
+    "技术报告",
+    "项目材料",
+    "日志与错误提示",
+    "日常技术交流"
+  ],
+  "actions": {
+    "no_change": "不作任何修改",
+    "error_fix": "判为 Error 并作最小纠正",
+    "warning_note": "给出 Warning 建议，不改写",
+    "review": "记待确认，不改写"
+  },
+  "module": "engineering-thermophysics",
+  "cases": [
+    {
+      "id": "P04",
+      "category": "positive",
+      "text_type": "技术文档",
+      "source": "热导率取材料表数值，并随温度修正。",
+      "expected_action": "no_change",
+      "expected_level": "none",
+      "dimension": "术语准确性",
+      "rationale": "该词形在学术文献中并存，缺少强制禁用依据"
+    },
+    {
+      "id": "N04",
+      "category": "negative",
+      "text_type": "技术报告",
+      "source": "误差与测量不确定度按同一公式计算。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "术语准确性",
+      "rationale": "不同概念不得合并，E4"
+    },
+    {
+      "id": "N08",
+      "category": "negative",
+      "text_type": "技术文档",
+      "source": "单位时间内通过给定面的热量按热流量计算，本文把热量写作 5 W。",
+      "expected_action": "error_fix",
+      "expected_level": "Error",
+      "dimension": "术语准确性",
+      "rationale": "热量指能量，不指速率，E4"
+    },
+    {
+      "id": "B04",
+      "category": "boundary",
+      "text_type": "技术文档",
+      "source": "Re 增大时 Nu 随之变化。",
+      "expected_action": "warning_note",
+      "expected_level": "Warning",
+      "dimension": "术语准确性",
+      "rationale": "首次全称属 Warning，不判 Error，2.3"
+    },
+    {
+      "id": "B05",
+      "category": "boundary",
+      "text_type": "技术文档",
+      "source": "导热系数取材料表数值，热导率随温度修正。",
+      "expected_action": "warning_note",
+      "expected_level": "Warning",
+      "dimension": "术语准确性",
+      "rationale": "B 层并存词形只提示同文档一致，W7"
+    },
+    {
+      "id": "B06",
+      "category": "boundary",
+      "text_type": "技术文档",
+      "source": "用于高温条件下壁面热流密度测量的新的标定方法被记录在系统所生成的文件中。",
+      "expected_action": "warning_note",
+      "expected_level": "Warning",
+      "dimension": "中文自然程度",
+      "rationale": "长定语与被动为合法结构，W1 建议项"
+    }
+  ]
+}
